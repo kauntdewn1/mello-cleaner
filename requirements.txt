@@ -1,0 +1,15 @@
+# Dependências para desenvolvimento e build
+py2app>=0.28.0
+setuptools>=65.0.0
+
+# Bibliotecas padrão do Python (não precisam ser instaladas, mas documentadas)
+# - os (built-in)
+# - shutil (built-in) 
+# - subprocess (built-in)
+# - tkinter (built-in no macOS)
+# - pathlib (built-in no Python 3.4+)
+
+# Para desenvolvimento (opcional)
+# pytest>=7.0.0  # Para testes
+# black>=22.0.0  # Para formatação de código
+# flake8>=5.0.0  # Para linting
