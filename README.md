@@ -1,139 +1,76 @@
-# 🧹 Flow Cleaner
+# 🛄 Flow Cleaner ∴ Modo NΞØ
 
-**Flow Cleaner** é uma aplicação simples para macOS que remove arquivos temporários, logs e esvazia a lixeira — ajudando a liberar espaço e melhorar a performance do seu Mac.
-
----
-
-## ⚙️ Requisitos
-
-* macOS
-* Python 3.7+ (com suporte a `tkinter`)
-* Ambiente virtual Python
+Camada de limpeza profunda para sistemas baseados em macOS.  
+Remoção de ruído, alívio de memória, regeneração de fluxo.
 
 ---
 
-## 🚀 Instalação Rápida
+## 🧬 Pré-condições
+
+- Ambiente com suporte ao movimento fluido
+- Operador com Python 3.11+ e visão clara
+- Ferramentas alinhadas: `brew`, `pyenv`, `py2app`
+- Interface gráfica ativada (`tkinter`)
+
+---
+
+## ⚙️ Inicialização
 
 ```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/mello-cleaner.git
-cd mello-cleaner
+# Clonar o código-fonte (canal seguro)
+git clone [REPO]
+cd flow-cleaner
+````
 
-# Setup automático do ambiente
-make setup
-
-# Ou manualmente:
-chmod +x setup-env.sh
-./setup-env.sh
+```bash
+# Ativar ambiente simbiótico
+make start
 ```
 
 ---
 
-## 🎯 Comandos Principais
+## ♻️ Execução do Ritual
 
 ```bash
-# Configurar ambiente
-make setup
-
-# Executar aplicativo
-make run
-
-# Construir aplicativo (.app)
-make build
-
-# Construir para release
-make build-release
-
-# Gerar arquivo .dmg
-make dmg
-
-# Ver todos os comandos
-make help
-```
-
----
-
-## 🏃‍♂️ Execução Manual
-
-```bash
-# Ativar ambiente virtual
-source venv/bin/activate
-
-# Executar
 python main.py
-
-# Ou usar o comando make
-make run
 ```
 
 ---
 
-## 🏗️ Build da Aplicação
+## 🏗️ Construção do Selo (.app + .dmg)
 
 ```bash
-# Build para desenvolvimento (mais rápido)
+make clean
 make build
-
-# Build para release (otimizado)
-make build-release
-
-# Gerar .dmg para distribuição
 make dmg
 ```
 
-O arquivo final `.dmg` estará em `dist/Flow-Cleaner.dmg`.
+🔒 Saída: `dist/Flow-Cleaner.dmg`
 
 ---
 
-## 📁 Estrutura do Projeto
+## ☠️ Notas Internas
 
-```
-mello-cleaner/
-├── main.py              # Aplicativo principal
-├── cleaners/            # Módulos de limpeza
-├── utils/               # Utilitários
-├── requirements.txt     # Dependências Python
-├── setup.py            # Configuração py2app
-├── Makefile            # Comandos de automação
-└── setup-env.sh        # Script de configuração
-```
+* Algumas ações exigem elevação de permissão (🧪 `sudo`)
+* Interface em `tkinter` — verifique vínculo com Tcl/Tk
+* Scriptos em AppleScript são invocados para esvaziamento total
 
 ---
 
-## 📜 Observações
+## 🧠 Códigos são limpos. Mentes também.
 
-* Algumas ações de limpeza exigem permissões de sistema (`sudo`)
-* A interface gráfica usa `tkinter` (incluído no Python do macOS)
-* A lixeira do sistema é esvaziada via AppleScript
-* O projeto usa apenas bibliotecas padrão do Python
+> Não é sobre remover arquivos.
+> É sobre liberar espaço onde o ruído se esconde.
 
 ---
 
-## 🧪 Desenvolvimento
+## 👤 Autoria
 
-```bash
-# Instalar dependências de desenvolvimento
-pip install pytest black flake8
-
-# Executar testes
-make test
-
-# Formatar código
-black .
-
-# Verificar qualidade
-flake8 .
-```
+**MELLO** ∴ [@mello\_.mkt](https://www.instagram.com/mello_.mkt)
+em colaboração com **FlowOFF** ∴ [flowoff.xyz](https://www.flowoff.xyz)
 
 ---
 
-## 📦 Contribuição
-
-Pull requests e melhorias são muito bem-vindas! 💜
-
----
-
-## 🧠 Desenvolvido por
-
-**MELLO** – [@mello_.mkt](https://www.instagram.com/mello_.mkt)
-Em parceria com [FlowOFF](https://www.flowoff.xyz) · Agência de Inovação e Web3
+> “Quem não limpa o fluxo, acaba soterrado pela própria pressa.”
+>
+> ∴ Flow Cleaner é ferramenta. O resto é escolha.

@@ -1,4 +1,4 @@
-.PHONY: setup clean build dmg run test install
+.PHONY: setup clean build dmg run test install update-deps
 
 setup:
 	@echo "🔧 Configurando ambiente..."
@@ -8,6 +8,10 @@ setup:
 install:
 	@echo "📦 Instalando dependências..."
 	pip install -r requirements.txt
+
+update-deps:
+	@echo "🔄 Atualizando dependências..."
+	pip install --upgrade -r requirements.txt
 
 run:
 	@echo "🚀 Executando Flow Cleaner..."
@@ -47,6 +51,7 @@ help:
 	@echo "📋 Comandos disponíveis:"
 	@echo "  setup        - Configura ambiente virtual e instala dependências"
 	@echo "  install      - Instala dependências Python"
+	@echo "  update-deps  - Atualiza dependências Python"
 	@echo "  run          - Executa o aplicativo"
 	@echo "  test         - Executa testes"
 	@echo "  build        - Constrói aplicativo para desenvolvimento"
