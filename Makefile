@@ -47,6 +47,38 @@ dmg:
 		dist/Flow-Cleaner.dmg \
 		dist/
 
+analyze:
+	@echo "🔍 Analisando arquivos do sistema..."
+	./analyze_files.sh
+
+organize:
+	@echo "🎯 Iniciando organização rápida..."
+	./quick_organize.sh
+
+organize-desktop:
+	@echo "🖥️ Organizando Desktop automaticamente..."
+	./organize_desktop.sh
+
+clean-downloads:
+	@echo "📥 Limpando Downloads automaticamente..."
+	./clean_downloads.sh
+
+analyze-apps:
+	@echo "📱 Analisando aplicativos instalados..."
+	./clean_applications.sh
+
+remove-apps:
+	@echo "🗑️ Removendo aplicativos não utilizados..."
+	./remove_apps.sh
+
+remove-specific-apps:
+	@echo "🗑️ Removendo aplicativos específicos..."
+	./remove_specific_apps.sh
+
+delete-backup-apps:
+	@echo "🗑️ Deletando aplicativos do backup definitivamente..."
+	./delete_backup_apps.sh
+
 help:
 	@echo "📋 Comandos disponíveis:"
 	@echo "  setup        - Configura ambiente virtual e instala dependências"
@@ -58,4 +90,16 @@ help:
 	@echo "  build-release- Constrói aplicativo para release"
 	@echo "  clean        - Remove arquivos de build"
 	@echo "  dmg          - Gera arquivo .dmg para distribuição"
+	@echo ""
+	@echo "🗂️ Comandos de Organização:"
+	@echo "  analyze      - Analisa arquivos sem mover nada"
+	@echo "  organize     - Organização interativa (você escolhe)"
+	@echo "  organize-desktop - Organiza Desktop automaticamente"
+	@echo "  clean-downloads - Limpa Downloads automaticamente"
+	@echo ""
+	@echo "📱 Comandos de Aplicativos:"
+	@echo "  analyze-apps - Analisa aplicativos instalados"
+	@echo "  remove-apps - Remove aplicativos não utilizados"
+	@echo "  remove-specific-apps - Remove aplicativos específicos"
+	@echo "  delete-backup-apps - Deleta aplicativos do backup definitivamente"
 	@echo "  help         - Mostra esta ajuda"
